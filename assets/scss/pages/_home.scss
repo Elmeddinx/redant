@@ -1,0 +1,38 @@
+body {
+    background-color: $neutrals-1;
+}
+.rd-nav {
+    width: 100%;
+    margin-top: 48px;
+    &__container {
+        max-width: 1120px;
+        margin: auto;
+        @include mq(desktop-up) {
+            width: 100%;
+        }
+    }
+    &__inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        img {
+            height: 40px;
+            @include mq(phone-only) {
+                height: 30px;
+            }
+        }
+    }
+    &__btn {
+
+    }
+    
+    @include mq(desktop-up) {
+        padding: 0 24px;
+    }
+    @include mq(phone-only) {
+        padding: 0 12px;
+    }
+}

@@ -13,7 +13,7 @@
         }
     } @else if $size ==tablet-landscape-up {
         @media only screen and (max-width: 1024px) {
-            @content; 
+            @content;
         }
     } @else if $size ==desktop-up {
         @media only screen and (max-width: 1200px) {
@@ -27,5 +27,49 @@
         @media only screen and (max-width: 1400px) {
             @content;
         }
+    }
+}
+
+@mixin btn-md($col, $bg, $hv, $hvcol, $brcol) {
+    border: 2px solid $brcol;
+    color: $col;
+    padding: 16px 24px;
+    border-radius: 90px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    transition: all 0.3s ease;
+    &:hover {
+        background: $hv;
+        color: $hvcol;
+        border-color: transparent;
+        transition: all 0.3s ease;
+    }
+    &:disabled {
+        opacity: 0.5;
+        background: $hv;
+        color: $hvcol;
+    }
+}
+@mixin btn-sm($col, $bg, $hv, $hvcol, $brcol) {
+    border: 2px solid $brcol;
+    color: $col;
+    padding: 12px 16px;
+    border-radius: 90px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    &:hover {
+        background-color: $hv;
+        color: $hvcol;
+        border-color: $hv;
+        transition: all 0.3s ease;
+    }
+    &:disabled {
+        opacity: 0.5;
+        background: $hv;
+        color: $hvcol;
     }
 }
