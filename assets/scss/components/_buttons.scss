@@ -9,6 +9,12 @@
     &__dark-md {
         @include btn-md($neutrals-8, $neutrals-8, $neutrals-8, $neutrals-2, $neutrals-4);
         background-color: $neutrals-1;
+        
+        &:hover {
+            path{
+                fill: $neutrals-1 !important;
+            }
+        }
     }
 
     &__light-md {

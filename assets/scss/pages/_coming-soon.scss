@@ -1,0 +1,141 @@
+.cs-nav {
+    width: 100%;
+    margin-top: 48px;
+
+    &__container {
+        max-width: 1120px;
+        margin: auto;
+
+        @include mq(desktop-up) {
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        img {
+            height: 40px;
+
+            @include mq(phone-only) {
+                height: 30px;
+            }
+        }
+    }
+
+    @include mq(desktop-up) {
+        padding: 0 24px;
+    }
+
+    @include mq(phone-only) {
+        padding: 0 12px;
+    }
+}
+
+.cs-header {
+    margin: 125px 0;
+    position: relative;
+
+    .circle-2 {
+        position: absolute;
+        left: 60px;
+        top: 50%;
+
+        @include mq(desktop-up) {
+            display: none;
+        }
+    }
+
+    &__container {
+        max-width: 1120px;
+        margin: auto;
+
+        @include mq(desktop-up) {
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 55px;
+        }
+    }
+
+    &__left {
+        position: relative;
+
+        .circle-1 {
+            position: absolute;
+            right: 36%;
+            top: -50px;
+
+            @include mq(desktop-up) {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        color: $neutrals-8;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -1.28px;
+        max-width: 544px;
+        margin-bottom: 32px;
+
+        @include mq(tablet-portrait-up) {
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.96px;
+        }
+    }
+
+    &__text {
+        color: $neutrals-6;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+
+    &__btn-group {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    &__right {
+        max-width: 696px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    @include mq(desktop-up) {
+        padding: 0 24px;
+    }
+
+    @include mq(tablet-portrait-up) {
+        margin-top: 48px;
+    }
+    @include mq(phone-only) {
+        padding: 0 12px;
+    }
+}
