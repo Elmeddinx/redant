@@ -20,16 +20,32 @@
             @content;
         }
     } @else if $size ==big-desktop-up {
-        @media only screen and (min-width: 1401px) {
+        @media only screen and (min-width: 1440px) {
             @content;
         }
     } @else if $size ==big-desktop-down {
-        @media only screen and (max-width: 1400px) {
+        @media only screen and (max-width: 1440px) {
             @content;
         }
     }
 }
-
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+      @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+      @content;
+    }
+    @-o-keyframes #{$animation-name} {
+      @content;
+    }
+    @keyframes #{$animation-name} {
+      @content;
+    }
+}
 @mixin btn-md($col, $bg, $hv, $hvcol, $brcol) {
     border: 2px solid $brcol;
     color: $col;

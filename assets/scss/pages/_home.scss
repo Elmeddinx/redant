@@ -1,13 +1,11 @@
-body {
-    background-color: $neutrals-1;
-}
+
 
 .rd-nav {
     width: 100%;
     margin-top: 48px;
 
     &__container {
-        max-width: 1120px;
+        max-width: 1440px;
         margin: auto;
 
         @include mq(desktop-up) {
@@ -32,7 +30,6 @@ body {
         }
     }
 
-    &__btn {}
 
     @include mq(desktop-up) {
         padding: 0 24px;
@@ -45,24 +42,31 @@ body {
 
 .rd-header {
     margin-top: 125px;
-    position: relative;
-
-    .circle-2 {
-        position: absolute;
-        left: 60px;
-        top: 50%;
-
-        @include mq(desktop-up) {
-            display: none;
-        }
-    }
-
+    
 
     &__container {
-        max-width: 1120px;
+        max-width: 1440px;
         margin: auto;
+        position: relative;
 
+        .circle-2 {
+            position: absolute;
+            left: -81px;
+            top: 50%;
+    
+            @include mq(desktop-up) {
+                display: none;
+            }
+        }
+    
+        
+        @include mq(big-desktop-down) {
+            width: 1240px;
+        }
         @include mq(desktop-up) {
+            width: 1024px;
+        }
+        @include mq(tablet-landscape-up) {
             width: 100%;
         }
     }
@@ -73,7 +77,7 @@ body {
         align-items: center;
         justify-content: space-between;
 
-        @include mq(tablet-landscape-up) {
+        @include mq(tablet-portrait-up) {
             flex-direction: column;
             align-items: flex-start;
             row-gap: 55px;
@@ -86,7 +90,7 @@ body {
 
         .circle-1 {
             position: absolute;
-            right: 36%;
+            right: 147px;
             top: -50px;
 
             @include mq(desktop-up) {
@@ -137,8 +141,13 @@ body {
 
     &__right {
         max-width: 696px;
-
         img {
+            width: 100%;
+        }
+        @include mq(tablet-landscape-up) {
+            width: 450px;
+        }
+        @include mq(tablet-portrait-up) {
             width: 100%;
         }
     }
