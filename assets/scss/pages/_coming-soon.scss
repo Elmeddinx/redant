@@ -3,11 +3,14 @@
     margin-top: 48px;
 
     &__container {
-        max-width: 1440px;
+        max-width: 1210px;
         margin: auto;
 
+        @include mq(big-desktop-up) {
+            width: 1440px;
+        }
         @include mq(big-desktop-down) {
-            width: 1240px;
+            width: 1024px;
         }
         @include mq(desktop-up) {
             width: 1024px;
@@ -44,10 +47,10 @@
 }
 
 .cs-header {
-    margin-top: 125px;
+    margin: 125px 0;
 
     &__container {
-        max-width: 1440px;
+        max-width: 1210px;
         margin: auto;
         position: relative;
 
@@ -60,9 +63,11 @@
                 display: none;
             }
         }
-
+        @include mq(big-desktop-up) {
+            width: 1440px;
+        }
         @include mq(big-desktop-down) {
-            width: 1240px;
+            width: 1024px;
         }
         @include mq(desktop-up) {
             width: 1024px;
@@ -195,13 +200,13 @@
             }
             @keyframes phone-2 {
                 0% {
-                    transform: translateY(0px);
+                    transform: translateY(15px);
                 }
                 50% {
-                    transform: translateY(10px);
+                    transform: translateY(0px);
                 }
                 100% {
-                    transform: translateY(0px);
+                    transform: translateY(15px);
                 }
             }
             
@@ -213,7 +218,7 @@
             left: -35px;
             bottom: 226px;
             z-index: 3;
-            transform-origin: 50% 50px;
+            // transform-origin: 50% 0px;
             animation: sphare-anim 5s linear infinite;
             @include mq(desktop-up) {
                 width: 120px;
@@ -236,6 +241,7 @@
             position: absolute;
             right: -65px;
             top: 92px;
+            animation: sphare-anim 3s linear infinite;
             @include mq(desktop-up) {
                 width: 60px;
                 height: 60px;
@@ -257,6 +263,7 @@
             position: absolute;
             right: 0;
             bottom: 87px;
+            animation: sphare-anim 5s linear infinite;
             @include mq(desktop-up) {
                 width: 25px;
                 height: 25px;
@@ -278,6 +285,7 @@
             position: absolute;
             left: 50%;
             top: 70px;
+            animation: sphare-anim 5s linear infinite;
             @include mq(desktop-up) {
                 width: 20px;
                 height: 20px;

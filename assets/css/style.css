@@ -293,12 +293,17 @@ body {
   margin-top: 48px;
 }
 .cs-nav__container {
-  max-width: 1440px;
+  max-width: 1210px;
   margin: auto;
+}
+@media only screen and (min-width: 1440px) {
+  .cs-nav__container {
+    width: 1440px;
+  }
 }
 @media only screen and (max-width: 1440px) {
   .cs-nav__container {
-    width: 1240px;
+    width: 1024px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -337,10 +342,10 @@ body {
 }
 
 .cs-header {
-  margin-top: 125px;
+  margin: 125px 0;
 }
 .cs-header__container {
-  max-width: 1440px;
+  max-width: 1210px;
   margin: auto;
   position: relative;
 }
@@ -354,9 +359,14 @@ body {
     display: none;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .cs-header__container {
+    width: 1440px;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .cs-header__container {
-    width: 1240px;
+    width: 1024px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -507,13 +517,13 @@ body {
 }
 @keyframes phone-2 {
   0% {
-    transform: translateY(0px);
+    transform: translateY(15px);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(15px);
   }
 }
 .cs-header__right-sphere1 {
@@ -523,7 +533,6 @@ body {
   left: -35px;
   bottom: 226px;
   z-index: 3;
-  transform-origin: 50% 50px;
   animation: sphare-anim 5s linear infinite;
 }
 @media only screen and (max-width: 1200px) {
@@ -552,6 +561,7 @@ body {
   position: absolute;
   right: -65px;
   top: 92px;
+  animation: sphare-anim 3s linear infinite;
 }
 @media only screen and (max-width: 1200px) {
   .cs-header__right-sphere2 {
@@ -579,6 +589,7 @@ body {
   position: absolute;
   right: 0;
   bottom: 87px;
+  animation: sphare-anim 5s linear infinite;
 }
 @media only screen and (max-width: 1200px) {
   .cs-header__right-sphere3 {
@@ -606,6 +617,7 @@ body {
   position: absolute;
   left: 50%;
   top: 70px;
+  animation: sphare-anim 5s linear infinite;
 }
 @media only screen and (max-width: 1200px) {
   .cs-header__right-sphere4 {
