@@ -47,7 +47,7 @@
 }
 
 .cs-header {
-    margin: 125px 0;
+    margin-top: 125px;
 
     &__container {
         max-width: 1210px;
@@ -156,7 +156,7 @@
                 width: 351px;
                 position: relative;
                 z-index: 2;
-                animation: phone-1 infinite ease-in-out 2s;
+                animation: phone-1 infinite ease-in-out 3s;
                 @include mq(desktop-up) {
                     width: 290px;
                 }
@@ -172,7 +172,7 @@
                 position: absolute;
                 right: 0;
                 bottom: 0;
-                animation: phone-2 infinite ease-in-out 2s;
+                animation: phone-2 infinite ease-in-out 3s;
                 @include mq(desktop-up) {
                     width: 300px;
                 }
@@ -325,23 +325,6 @@
         }
     }
 
-    &__bottom {
-        display: flex;
-        align-items: center;
-        margin-top: 18.25px;
-
-        @include mq(tablet-portrait-up) {
-            display: none;
-        }
-    }
-
-    &__bottom-text {
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 20px;
-        color: $neutrals-5;
-    }
 
     @include mq(desktop-up) {
         padding: 0 24px;
