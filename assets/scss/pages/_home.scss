@@ -357,18 +357,35 @@
     margin-top: 128px;
     min-height: 100vh;
     &__container {
-        max-width: 1210px;
+        max-width: 1376px;
         margin: auto;
         position: relative;
     }
+    &__title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        color: $neutrals-6;
+        text-align: center;
+        margin-bottom: 27px;
+        @include mq(tablet-landscape-down) {
+            display: none;
+        }
+    }
     &__inner {
         width: 100%;
-        padding: 80px;
+        padding: 80px 0;
         border-radius: 48px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         background: linear-gradient(217deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%);
         box-shadow: 0px 24px 16px -16px rgba(0, 0, 0, 0.05);
         backdrop-filter: blur(20px);
+        @include mq(tablet-landscape-up) {
+            background: transparent;
+            border: none;
+            padding: 0;
+        }
     }
     &__item {
         // width: 156px !important;
@@ -398,6 +415,7 @@
             }
         }
         &-text {
+            width: max-content;
             text-align: center;
             font-size: 16px;
             font-style: normal;
@@ -407,7 +425,14 @@
         }
     }
     .swiper-wrapper {
-        justify-content: center;
+        column-gap: 30px;
+        @include mq(tablet-landscape-up) {
+            padding-left: 12px;
+        }
+        @media only screen and (min-width: 900px) {
+            padding-left: 0;
+            justify-content: center;
+        }
     }
     .swiper {
         width: 100%;
@@ -415,16 +440,31 @@
     }
 
     .swiper-slide {
+        max-width: fit-content;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .swiper-line {
-        // margin: 0 40px;
         svg {
             position: relative;
             top: 64px;
+            @include mq(tablet-landscape-up) {
+                top: 106px;
+            }
         }
+        @include mq(desktop-up) {
+            width: 48px;
+        }
+        // @include mq(tablet-portrait-up) {
+        //     width: 0;
+        // }
+        // @include mq(phone-only) {
+        //     width: 28px;
+        // }
+    }
+    @include mq(tablet-landscape-up) {
+        margin-top: 0;
     }
 }

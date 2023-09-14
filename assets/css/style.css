@@ -521,19 +521,40 @@ body {
   min-height: 100vh;
 }
 .la-process__container {
-  max-width: 1210px;
+  max-width: 1376px;
   margin: auto;
   position: relative;
 }
+.la-process__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  color: #E6E8EC;
+  text-align: center;
+  margin-bottom: 27px;
+}
+@media only screen and (min-width: 1024px) {
+  .la-process__title {
+    display: none;
+  }
+}
 .la-process__inner {
   width: 100%;
-  padding: 80px;
+  padding: 80px 0;
   border-radius: 48px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: linear-gradient(217deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%);
   box-shadow: 0px 24px 16px -16px rgba(0, 0, 0, 0.05);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
+}
+@media only screen and (max-width: 1024px) {
+  .la-process__inner {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
 }
 .la-process__item {
   height: 237px;
@@ -563,6 +584,8 @@ body {
   color: #E6E8EC;
 }
 .la-process__item-text {
+  width: -moz-max-content;
+  width: max-content;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -571,13 +594,27 @@ body {
   color: #E6E8EC;
 }
 .la-process .swiper-wrapper {
-  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  .la-process .swiper-wrapper {
+    padding-left: 12px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .la-process .swiper-wrapper {
+    padding-left: 0;
+    justify-content: center;
+  }
 }
 .la-process .swiper {
   width: 100%;
   height: 100%;
 }
 .la-process .swiper-slide {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -586,6 +623,21 @@ body {
 .la-process .swiper-line svg {
   position: relative;
   top: 64px;
+}
+@media only screen and (max-width: 1024px) {
+  .la-process .swiper-line svg {
+    top: 106px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .la-process .swiper-line {
+    width: 48px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .la-process {
+    margin-top: 0;
+  }
 }
 
 .cs-nav {
