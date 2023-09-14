@@ -60,3 +60,40 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
 });
+
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach((item, index) => {
+    const header = item.querySelector('.accordion-header');
+
+    header.addEventListener('click', () => {
+        // Diğer tüm açık öğeleri kapat
+        accordionItems.forEach((accordionItem, i) => {
+            if (i !== index) {
+                accordionItem.classList.remove('active');
+                const content = accordionItem.querySelector('.accordion-content');
+                content.style.maxHeight = null; // "collapsing" sınıfını temizle
+                content.classList.add('collapsing'); // "collapsing" sınıfını ekleyin
+                setTimeout(() => {
+                    content.classList.remove('collapsing'); // 0.5 saniye sonra "collapsing" sınıfını kaldırın
+                }, 500);
+            }
+        });
+
+        // Tıklanan öğeyi aç veya kapat
+        item.classList.add('active');
+        const content = item.querySelector('.accordion-content');
+        if (item.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        } else {
+            content.style.maxHeight = null;
+        }
+    });
+
+    // İlk öğeyi varsayılan olarak açık yap (index 0)
+    if (index === 0) {
+        item.classList.add('active');
+        const content = item.querySelector('.accordion-content');
+        content.style.maxHeight = content.scrollHeight + 'px';
+    }
+});
