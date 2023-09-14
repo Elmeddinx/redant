@@ -143,7 +143,6 @@
         }
     }
 
-
     &__right {
         width: 589px;
         height: 634px;
@@ -209,7 +208,6 @@
                     transform: translateY(15px);
                 }
             }
-            
         }
         &-sphere1 {
             width: 142px;
@@ -301,12 +299,12 @@
         }
         @keyframes sphare-anim {
             0% {
-              transform: rotate(0);
+                transform: rotate(0);
             }
             100% {
-              transform: rotate(360deg);
+                transform: rotate(360deg);
             }
-          }
+        }
 
         @include mq(desktop-up) {
             width: 460px;
@@ -324,7 +322,6 @@
             justify-content: center;
         }
     }
-
 
     &__bottom {
         display: flex;
@@ -354,5 +351,80 @@
 
     @include mq(phone-only) {
         padding: 0 12px;
+    }
+}
+.la-process {
+    margin-top: 128px;
+    min-height: 100vh;
+    &__container {
+        max-width: 1210px;
+        margin: auto;
+        position: relative;
+    }
+    &__inner {
+        width: 100%;
+        padding: 80px;
+        border-radius: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: linear-gradient(217deg, rgba(27, 29, 35, 0.7) 0%, rgba(27, 29, 35, 0.5) 100%);
+        box-shadow: 0px 24px 16px -16px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(20px);
+    }
+    &__item {
+        // width: 156px !important;
+        height: 237px;
+        display: flex;
+        flex-direction: column;
+        &-img {
+            width: 128px;
+            height: 128px;
+            margin-bottom: 24px;
+        }
+        &-count {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background-color: $neutrals-1;
+            margin-bottom: 13.78px;
+            &__number {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+                color: $neutrals-8;
+            }
+        }
+        &-text {
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            color: $neutrals-8;
+        }
+    }
+    .swiper-wrapper {
+        justify-content: center;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-line {
+        // margin: 0 40px;
+        svg {
+            position: relative;
+            top: 64px;
+        }
     }
 }
