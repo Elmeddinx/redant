@@ -29,7 +29,6 @@ eventList.forEach(e => {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     pagination: false,
-    // spaceBetween: 30,
     breakpoints: {
         320: {
             slidesPerView: 1.4,
@@ -61,39 +60,57 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-const accordionItems = document.querySelectorAll('.accordion-item');
+let accordions = document.querySelectorAll(".accordion");
 
-accordionItems.forEach((item, index) => {
-    const header = item.querySelector('.accordion-header');
+let accordionItems = [];
+accordions.forEach((acitem, aindex) => {
+    accordionItems.push(accordions[aindex].querySelectorAll('.accordion-item'));
+});
+accordionItems.forEach((accItem, accndex) => {
 
-    header.addEventListener('click', () => {
-        // Diğer tüm açık öğeleri kapat
-        accordionItems.forEach((accordionItem, i) => {
-            if (i !== index) {
-                accordionItem.classList.remove('active');
-                const content = accordionItem.querySelector('.accordion-content');
-                content.style.maxHeight = null; // "collapsing" sınıfını temizle
-                content.classList.add('collapsing'); // "collapsing" sınıfını ekleyin
-                setTimeout(() => {
-                    content.classList.remove('collapsing'); // 0.5 saniye sonra "collapsing" sınıfını kaldırın
-                }, 500);
+
+    accItem.forEach((item, index) => {
+        const header = item.querySelector('.accordion-header');
+
+        header.addEventListener('click', () => {
+            accItem.forEach((accordionItem, i) => {
+                if (i !== index) {
+                    accordionItem.classList.remove('active');
+                    const content = accordionItem.querySelector('.accordion-content');
+                    content.style.maxHeight = null;
+                    content.classList.add('collapsing');
+                    setTimeout(() => {
+                        content.classList.remove('collapsing');
+                    }, 100);
+                }
+            });
+
+            item.classList.add('active');
+            const content = item.querySelector('.accordion-content');
+            if (item.classList.contains('active')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = null;
             }
+
+            let translateX;
+            if (index === 0) {
+                translateX = 0;
+            } else if (index === 1) {
+                translateX = "-33.33%";
+            } else if (index === 2) {
+                translateX = "-66.66%";
+            }
+
+            const mockupScreen = item.parentElement.parentElement.querySelector('.mockupScreens');
+
+            mockupScreen.style.transform = `translateX(${translateX})`;
         });
 
-        // Tıklanan öğeyi aç veya kapat
-        item.classList.add('active');
-        const content = item.querySelector('.accordion-content');
-        if (item.classList.contains('active')) {
+        if (index === 0) {
+            item.classList.add('active');
+            const content = item.querySelector('.accordion-content');
             content.style.maxHeight = content.scrollHeight + 'px';
-        } else {
-            content.style.maxHeight = null;
         }
     });
-
-    // İlk öğeyi varsayılan olarak açık yap (index 0)
-    if (index === 0) {
-        item.classList.add('active');
-        const content = item.querySelector('.accordion-content');
-        content.style.maxHeight = content.scrollHeight + 'px';
-    }
 });
