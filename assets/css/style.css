@@ -1355,12 +1355,23 @@ body {
   }
 }
 .cs-header__text {
+  width: 70%;
   color: #E6E8EC;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .cs-header__text {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cs-header__text {
+    width: 100%;
+  }
 }
 .cs-header__btn-group {
   display: flex;
@@ -1600,18 +1611,18 @@ body {
 }
 @media only screen and (max-width: 1440px) {
   .cs-header {
-    margin: 100px 0;
+    margin: 75px 0;
   }
 }
 @media only screen and (max-width: 1200px) {
   .cs-header {
     padding: 0 24px;
-    margin: 75px 0;
+    margin: 50px 0;
   }
 }
 @media only screen and (max-width: 768px) {
   .cs-header {
-    margin-top: 48px;
+    margin: 48px 0 0 0;
   }
 }
 @media only screen and (max-width: 480px) {

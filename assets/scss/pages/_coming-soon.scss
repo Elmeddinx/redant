@@ -130,12 +130,19 @@
     }
 
     &__text {
+        width: 70%;
         color: $neutrals-6;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
         margin-bottom: 40px;
+        @include mq(tablet-portrait-up) {
+            width: 80%;
+        }
+        @include mq(phone-only) {
+            width: 100%;
+        }
     }
 
     &__btn-group {
@@ -335,16 +342,16 @@
 
 
     @include mq(big-desktop-down) {
-        margin: 100px 0;
+        margin: 75px 0;
     }
 
     @include mq(desktop-up) {
         padding: 0 24px;
-        margin: 75px 0;
+        margin: 50px 0;
     }
 
     @include mq(tablet-portrait-up) {
-        margin-top: 48px;
+        margin: 48px 0 0 0;
     }
 
     @include mq(phone-only) {
