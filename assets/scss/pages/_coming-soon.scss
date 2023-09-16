@@ -47,7 +47,7 @@
 }
 
 .cs-header {
-    margin: 125px 0;
+    margin: 50px 0;
 
     &__container {
         max-width: 1210px;
@@ -91,6 +91,7 @@
     }
 
     &__left {
+        width: 50%;
         position: relative;
 
         .circle-1 {
@@ -101,6 +102,9 @@
             @include mq(desktop-up) {
                 display: none;
             }
+        }
+        @include mq(tablet-portrait-up) {
+            width: 100%;
         }
     }
 
@@ -113,8 +117,8 @@
         letter-spacing: -1.28px;
         max-width: 544px;
         margin-bottom: 32px;
-        @media (max-width: 840px) and (min-width: 768px) {
-            font-size: 58px;
+        @media (max-width: 1024px) and (min-width: 768px) {
+            font-size: 48px;
             line-height: 58px;
         }
         @include mq(tablet-portrait-up) {
@@ -137,8 +141,8 @@
         font-weight: 400;
         line-height: 24px;
         margin-bottom: 40px;
-        @include mq(tablet-portrait-up) {
-            width: 80%;
+        @include mq(tablet-landscape-up) {
+            width: 82%;
         }
         @include mq(phone-only) {
             width: 100%;
@@ -341,9 +345,6 @@
     }
 
 
-    @include mq(big-desktop-down) {
-        margin: 75px 0;
-    }
 
     @include mq(desktop-up) {
         padding: 0 24px;
