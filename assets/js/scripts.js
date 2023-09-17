@@ -2,8 +2,8 @@
 var eventList = ["resize", "DOMContentLoaded"];
 eventList.forEach(e => {
     window.addEventListener(e, () => {
-        var genislik = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        if (genislik <= 1200) {
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if (width <= 1200) {
             var lineAttr = document.querySelectorAll(".swiperLine");
             lineAttr.forEach(e => {
                 e.querySelector("line").setAttribute("x2", "30");
@@ -12,7 +12,7 @@ eventList.forEach(e => {
             circleAttr.forEach(e => {
                 e.querySelector("circle").setAttribute("cx", "40");
             });
-        } else if (genislik >= 1200) {
+        } else if (width >= 1200) {
             var lineAttr = document.querySelectorAll(".swiperLine");
             lineAttr.forEach(e => {
                 e.querySelector("line").setAttribute("x2", "108");
@@ -113,4 +113,49 @@ accordionItems.forEach((accItem, accndex) => {
             content.style.maxHeight = content.scrollHeight + 'px';
         }
     });
+});
+/*
+1. Her sliderin icinde kartdan elave displayi none olan bir image olsun. 
+2. Bir function olsun ve bu sehife yuklenende bu imageleri gotursun mockupin icinde yan yana duzsun ama birinci gorunen her zaman "swiper.activeIndex" olsun. 
+3. Bir function daha olsun ve burada "on('slideChange', ()=> {})" islesin. Bu function her defe slayd deyisdiyinde "swiper.activeIndex" e gore mockupin icindeki yan yana duran sekilleri transfrom.translateX ne faiz versin. Belelikle mockupin ici soldan saga ve ya tersi istiqametinde hereket edecek. Bundan once  "swiper.slides" (Bu slidelerin umumi sayini goturur) lengthini gotur ve 100u bu lengthe bol. Cixan deyeri "swiper.activeIndex"e vur, belelikle mockup icinde her sekil nece faiz saga sola hereket etmeli oldugunu hesablamis olacaq. 
+4. Saga ve ya sola hereket etmeli oldugunu ise "on('slidePrevTransitionStart', ()=> {})" ve "on('slideNextTransitionStart', ()=> {})" ile teyin et. Bir dene var teyin et, deyeri default olaraq "true" olsun, eger true-dursa "+", "false"-dursa "-" olsun. 
+*/
+
+function myPlugin({ swiper, extendParams, on }) {
+    extendParams({
+        debugger: false,
+    });
+
+    on('slidePrevTransitionStart', () => {
+        console.log("slidePrevTransitionStart")
+    })
+    on('slideNextTransitionStart', () => {
+        console.log("slideNextTransitionStart")
+    })
+    on('slideChange', () => {
+        if (!swiper.params.debugger) return;
+        console.log(
+            'slideChange',
+            swiper.previousIndex,
+            '->',
+            swiper.activeIndex
+        );
+    });
+    
+}
+
+// Init Swiper
+var swiperBay = new Swiper('.swiperBay', {
+    // Install Plugin To Swiper
+    modules: [myPlugin],
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    // Enable debugger
+    debugger: true,
 });
