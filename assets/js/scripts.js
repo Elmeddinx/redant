@@ -121,41 +121,77 @@ accordionItems.forEach((accItem, accndex) => {
 4. Saga ve ya sola hereket etmeli oldugunu ise "on('slidePrevTransitionStart', ()=> {})" ve "on('slideNextTransitionStart', ()=> {})" ile teyin et. Bir dene var teyin et, deyeri default olaraq "true" olsun, eger true-dursa "+", "false"-dursa "-" olsun. 
 */
 
-function myPlugin({ swiper, extendParams, on }) {
-    extendParams({
-        debugger: false,
-    });
+// function myPlugin({ swiper, extendParams, on }) {
+//     extendParams({
+//         debugger: false,
+//     });
 
-    on('slidePrevTransitionStart', () => {
-        console.log("slidePrevTransitionStart")
-    })
-    on('slideNextTransitionStart', () => {
-        console.log("slideNextTransitionStart")
-    })
-    on('slideChange', () => {
-        if (!swiper.params.debugger) return;
-        console.log(
-            'slideChange',
-            swiper.previousIndex,
-            '->',
-            swiper.activeIndex
-        );
-    });
+//     on('slidePrevTransitionStart', () => {
+//         console.log("slidePrevTransitionStart")
+//     })
+//     on('slideNextTransitionStart', () => {
+//         console.log("slideNextTransitionStart")
+//     })
+//     on('slideChange', () => {
+//         if (!swiper.params.debugger) return;
+//         console.log(
+//             'slideChange',
+//             swiper.previousIndex,
+//             '->',
+//             swiper.activeIndex
+//         );
+//     });
     
-}
+// }
 
 // Init Swiper
 var swiperBay = new Swiper('.swiperBay', {
-    // Install Plugin To Swiper
-    modules: [myPlugin],
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+    slidesPerView: 3.38719,
+    autoHeight: true,
+    spaceBetween: 24,
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    // modules: [myPlugin],
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     // Enable debugger
     debugger: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 1.04,
+            spaceBetween: 16,
+        },
+        420: {
+            slidesPerView: 1.4,
+        },
+        520: {
+            slidesPerView: 1.5,
+        },
+        620: {
+            slidesPerView: 1.8,
+        },
+        720: {
+            slidesPerView: 2.1,
+            spaceBetween: 24,
+        },
+        920: {
+            slidesPerView: 2.4,
+        },
+        1020: {
+            slidesPerView: 2.6,
+        },
+        1120: {
+            slidesPerView: 2.8,
+        },
+        1220: {
+            slidesPerView: 3.2,
+        },
+        1320: {
+            slidesPerView: 3.45,
+        }
+    }
 });
