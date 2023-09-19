@@ -449,13 +449,11 @@
         img {
             position: relative;
             top: 64px;
-            @include mq(tablet-landscape-up) {
+            @include mq(desktop-up) {
+                content: url("/assets/img/process-line-sm.svg");
+                width: 48px;
                 top: 106px;
             }
-        }
-        @include mq(desktop-up) {
-            content: url("/assets/img/process-line-sm.svg");
-            width: 48px;
         }
         // @include mq(tablet-portrait-up) {
         //     width: 0;

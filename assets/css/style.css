@@ -629,15 +629,11 @@ body {
   position: relative;
   top: 64px;
 }
-@media only screen and (max-width: 1024px) {
-  .la-section1 .swiper-line img {
-    top: 106px;
-  }
-}
 @media only screen and (max-width: 1200px) {
-  .la-section1 .swiper-line {
+  .la-section1 .swiper-line img {
     content: url("/assets/img/process-line-sm.svg");
     width: 48px;
+    top: 106px;
   }
 }
 @media only screen and (max-width: 1024px) {
