@@ -460,7 +460,7 @@
             position: relative;
             top: 64px;
             @include mq(desktop-up) {
-                content: url("..//assets/img/process-line-sm.svg");
+                content: url("../img/process-line-sm.svg");
                 width: 48px;
                 top: 106px;
             }
@@ -740,7 +740,7 @@
 .la-section3 {
     margin-top: 136px;
     min-height: 100vh;
-    
+
     @include mq(tablet-portrait-up) {
         margin-top: 64px;
     }
@@ -1305,7 +1305,7 @@
 .la-section5 {
     margin-top: 136px;
     min-height: 576px;
-    
+
     @include mq(tablet-portrait-up) {
         margin-top: 64px;
         min-height: 436px;
@@ -1504,18 +1504,22 @@
             width: 142px;
             height: 142px;
             position: absolute;
-            left: -35px;
-            bottom: 226px;
+            left: -10px;
+            bottom: 338px;
             z-index: 3;
             // transform-origin: 50% 0px;
             animation: sphare-anim 5s linear infinite;
             @include mq(desktop-up) {
                 width: 120px;
                 height: 120px;
+                left: -28px;
+                bottom: 151px;
             }
             @include mq(tablet-landscape-up) {
                 width: 90px;
                 height: 90px;
+                left: -15px;
+                bottom: 164px;
             }
             @include mq(tablet-portrait-up) {
                 width: 66px;
@@ -1524,7 +1528,10 @@
                 bottom: 260px;
             }
             @include mq(phone-only) {
-                left: -20px;
+                left: 30px;
+            }
+            @include mq(phone-sm) {
+                left: -10px;
             }
         }
         &-sphere2 {

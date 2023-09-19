@@ -1,5 +1,9 @@
 @mixin mq($size) {
-    @if $size ==phone-only {
+    @if $size ==phone-sm {
+        @media only screen and (max-width: 380px) {
+            @content;
+        }
+    } @else if $size ==phone-only {
         @media only screen and (max-width: 480px) {
             @content;
         }

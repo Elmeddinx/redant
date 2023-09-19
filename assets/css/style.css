@@ -647,7 +647,7 @@ body {
 }
 @media only screen and (max-width: 1200px) {
   .la-section1 .swiper-line img {
-    content: url("..//assets/img/process-line-sm.svg");
+    content: url("../img/process-line-sm.svg");
     width: 48px;
     top: 106px;
   }
@@ -1813,8 +1813,8 @@ body {
   width: 142px;
   height: 142px;
   position: absolute;
-  left: -35px;
-  bottom: 226px;
+  left: -10px;
+  bottom: 338px;
   z-index: 3;
   animation: sphare-anim 5s linear infinite;
 }
@@ -1822,12 +1822,16 @@ body {
   .la-section6__bottom-sphere1 {
     width: 120px;
     height: 120px;
+    left: -28px;
+    bottom: 151px;
   }
 }
 @media only screen and (max-width: 1024px) {
   .la-section6__bottom-sphere1 {
     width: 90px;
     height: 90px;
+    left: -15px;
+    bottom: 164px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1840,7 +1844,12 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .la-section6__bottom-sphere1 {
-    left: -20px;
+    left: 30px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .la-section6__bottom-sphere1 {
+    left: -10px;
   }
 }
 .la-section6__bottom-sphere2 {
