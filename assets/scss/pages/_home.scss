@@ -455,12 +455,6 @@
                 top: 106px;
             }
         }
-        // @include mq(tablet-portrait-up) {
-        //     width: 0;
-        // }
-        // @include mq(phone-only) {
-        //     width: 28px;
-        // }
     }
     @include mq(tablet-landscape-up) {
         margin-top: 0;
