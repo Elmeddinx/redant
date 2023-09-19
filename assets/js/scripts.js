@@ -1,31 +1,3 @@
-
-var eventList = ["resize", "DOMContentLoaded"];
-eventList.forEach(e => {
-    window.addEventListener(e, () => {
-        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        if (width <= 1200) {
-            var lineAttr = document.querySelectorAll(".swiperLine");
-            lineAttr.forEach(e => {
-                e.querySelector("line").setAttribute("x2", "30");
-            });
-            var circleAttr = document.querySelectorAll(".swiperLine");
-            circleAttr.forEach(e => {
-                e.querySelector("circle").setAttribute("cx", "40");
-            });
-        } else if (width >= 1200) {
-            var lineAttr = document.querySelectorAll(".swiperLine");
-            lineAttr.forEach(e => {
-                e.querySelector("line").setAttribute("x2", "108");
-            });
-            var circleAttr = document.querySelectorAll(".swiperLine");
-            circleAttr.forEach(e => {
-                e.querySelector("circle").setAttribute("cx", "122");
-            });
-        }
-    });
-});
-
-
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     pagination: false,
@@ -141,7 +113,7 @@ accordionItems.forEach((accItem, accndex) => {
 //             swiper.activeIndex
 //         );
 //     });
-    
+
 // }
 
 // Init Swiper
@@ -200,4 +172,50 @@ var swiperBay = new Swiper('.swiperBay', {
             slidesPerView: 3.45,
         }
     }
+});
+
+var swiper = new Swiper(".ValueSwiper", {
+    slidesPerView: 2,
+    // spaceBetween: 96,
+    pagination: false,
+    grid: {
+        rows: 2,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.3,
+            grid: false,
+            spaceBetween: 32,
+        },
+        375: {
+            slidesPerView: 1.45,
+            grid: false,
+        },
+        450: {
+            slidesPerView: 1.65,
+            grid: false,
+        },
+        525: {
+            slidesPerView: 1.85,
+            grid: false,
+        },
+        625: {
+            slidesPerView: 2,
+            grid: false,
+        },
+        725: {
+            slidesPerView: 2.25,
+            grid: false,
+        },
+        825: {
+            slidesPerView: 2.5,
+            grid: false,
+        },
+        1024: {
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+            },
+        },
+    },
 });
