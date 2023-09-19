@@ -165,21 +165,27 @@ var swiperBay = new Swiper('.swiperBay', {
             slidesPerView: 1.04,
             spaceBetween: 16,
         },
+        350: {
+            slidesPerView: 1.2,
+        },
         420: {
             slidesPerView: 1.4,
         },
         520: {
             slidesPerView: 1.5,
         },
-        620: {
+        600: {
             slidesPerView: 1.8,
         },
         720: {
             slidesPerView: 2.1,
             spaceBetween: 24,
         },
-        920: {
+        820: {
             slidesPerView: 2.4,
+        },
+        920: {
+            slidesPerView: 2.6,
         },
         1020: {
             slidesPerView: 2.6,
