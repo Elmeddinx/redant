@@ -2183,9 +2183,6 @@ body {
   height: 100%;
 }
 
-.la-section8 {
-  margin-bottom: 500px;
-}
 @media only screen and (max-width: 768px) {
   .la-section8 {
     margin-top: 64px;
@@ -2461,6 +2458,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.la-section9 {
+  margin-top: 136px;
+}
+@media only screen and (max-width: 768px) {
+  .la-section9 {
+    margin-top: 64px;
+  }
+}
+.la-section9__container {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+.la-section9__inner {
+  width: 100%;
 }
 
 .cs-nav {
