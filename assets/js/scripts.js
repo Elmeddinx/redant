@@ -219,3 +219,44 @@ var swiper = new Swiper(".ValueSwiper", {
         },
     },
 });
+
+var swiper = new Swiper(".refSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 32,
+    pagination: false,
+    breakpoints: {
+        320: {
+            slidesPerView: 1.18,
+            spaceBetween: 16,
+        },
+        375: {
+            slidesPerView: 1.35,
+            spaceBetween: 16,
+        },
+        450: {
+            slidesPerView: 1.45,
+            spaceBetween: 16,
+        },
+        525: {
+            slidesPerView: 1.65,
+            spaceBetween: 16,
+        },
+        625: {
+            slidesPerView: 1.8,
+            spaceBetween: 16,
+        },
+        768: {
+            slidesPerView: 2.25,
+            spaceBetween: 32,
+        },
+        825: {
+            slidesPerView: 2.5,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
