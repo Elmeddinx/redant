@@ -1828,8 +1828,6 @@
     }
 }
 .la-section8 {
-    margin-bottom: 500px;
-
     @include mq(tablet-portrait-up) {
         margin-top: 64px;
     }
@@ -2088,5 +2086,28 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+.la-section9 {
+    margin-top: 136px;
+    @include mq(tablet-portrait-up) {
+        margin-top: 64px;
+    }
+    &__container {
+        max-width: 1440px;
+        margin: auto;
+        position: relative;
+        // &-circle1 {
+        //     width: 1200px;
+        //     height: 1200px;
+        //     border-radius: 1200px;
+        //     border: 5px solid rgba(8, 90, 255, 0.979);
+        // }
+        &-circle2 {
+
+        }
+    }
+    &__inner {
+        width: 100%;
     }
 }
