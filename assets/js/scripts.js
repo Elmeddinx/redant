@@ -226,7 +226,7 @@ var swiper = new Swiper(".refSwiper", {
 var swiper = new Swiper(".userSwiper", {
     slidesPerView: 5,
     spaceBetween: 32,
-    pagination: false,    
+    pagination: false,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -266,4 +266,154 @@ var swiper = new Swiper(".userSwiper", {
             slidesPerView: 5,
         },
     },
+});
+
+TweenMax.from(".nav-logo", 0.5, {
+    delay: 0.2,
+    y: -50,
+    opacity: 0
+});
+TweenMax.from(".nav-btn", 0.5, {
+    delay: 0.35,
+    y: -50,
+    opacity: 0
+});
+TweenMax.from(".la-header__title", 0.5, {
+    delay: 0.2,
+    x: -50,
+    opacity: 0
+});
+TweenMax.from(".la-header__text", 0.5, {
+    delay: 0.25,
+    x: -50,
+    opacity: 0
+});
+TweenMax.from(".la-header__bottom-text", 0.5, {
+    delay: 0.25,
+    y: -50,
+    opacity: 0
+});
+TweenMax.from(".header-btn1", 0.5, {
+    delay: 0.30,
+    x: -50,
+    opacity: 0
+});
+TweenMax.from(".header-btn2", 0.5, {
+    delay: 0.35,
+    x: -50,
+    opacity: 0
+});
+TweenMax.from(".la-header__right", 0.5, {
+    delay: 0.2,
+    x: 50,
+    opacity: 0
+});
+TweenMax.from(".circle-1", 0.5, {
+    delay: 0.2,
+    y: -50,
+    opacity: 0
+});
+TweenMax.from(".circle-2", 0.5, {
+    delay: 0.2,
+    x: -50,
+    opacity: 0
+});
+let laSection1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.la-section1',
+        start: 'top center'
+    }
+});
+laSection1.from('.la-section1', {
+    y: 100,
+    opacity: 0,
+    duration: 0.3
+});
+let laSection2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.la-section2',
+        start: 'top center'
+    }
+});
+laSection2.from('.la-section2', {
+    y: 100,
+    opacity: 0,
+    duration: 0.3
+});
+let laSection3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.la-section3',
+        start: 'top center'
+    }
+});
+laSection3.from('.la-section3', {
+    y: 100,
+    opacity: 0,
+    duration: 0.3
+});
+let laSection4 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.la-section4',
+        start: 'top center'
+    }
+});
+laSection4.from('.la-section4', {
+    y: 100,
+    opacity: 0,
+    duration: 0.3
+});
+let laSection5 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.la-section5',
+        start: 'top center'
+    }
+});
+laSection5.from('.la-section5', {
+    y: 100,
+    opacity: 0,
+    duration: 0.3
+});
+let laSection6 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.la-section6',
+        start: 'top center'
+    }
+});
+laSection6.from('.la-section6', {
+    y: 100,
+    opacity: 0,
+    duration: 0.3
+});
+let laSection7 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.la-section7',
+        start: 'top center'
+    }
+});
+laSection7.from('.la-section7', {
+    y: 100,
+    opacity: 0,
+    duration: 0.3
+});
+let laSection8 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.la-section8',
+        start: 'top center'
+    }
+});
+laSection8.from('.la-section8', {
+    y: 100,
+    opacity: 0,
+    duration: 0.3
+});
+let laSection9 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.la-section9',
+        start: 'top center'
+    }
+});
+laSection9.from('.la-section9', {
+    y: 100,
+    opacity: 0,
+    duration: 0.3
 });
