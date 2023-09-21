@@ -2177,8 +2177,16 @@ body {
 .la-section7__item-bottom__pp {
   width: 48px;
   height: 48px;
+  position: relative;
 }
-.la-section7__item-bottom__pp img {
+.la-section7__item-bottom__pp-badget {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+.la-section7__item-bottom__pp-img {
   width: 100%;
   height: 100%;
 }
