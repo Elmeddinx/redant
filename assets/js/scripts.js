@@ -263,7 +263,7 @@ var swiper = new Swiper(".userSwiper", {
             slidesPerView: 4,
         },
         1200: {
-            slidesPerView: 4.5,
+            slidesPerView: 5,
         },
     },
 });
