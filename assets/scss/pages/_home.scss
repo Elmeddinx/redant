@@ -520,7 +520,7 @@
         position: relative;
         grid-area: left-mockup;
 
-        @include mq(desktop-up) {
+        @media (max-width: 1280px) {
             width: 479px;
             height: 695.24px;
         }
@@ -593,7 +593,7 @@
                 box-sizing: border-box;
                 border: 8px solid transparent;
                 z-index: 2;
-                @include mq(desktop-up) {
+                @media (max-width: 1280px) {
                     width: 340px;
                     height: 710px;
                     border-radius: 55px;

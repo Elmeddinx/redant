@@ -710,7 +710,7 @@ body {
   position: relative;
   grid-area: left-mockup;
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1280px) {
   .la-section2__left {
     width: 479px;
     height: 695.24px;
@@ -798,7 +798,7 @@ body {
   border: 8px solid transparent;
   z-index: 2;
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1280px) {
   .la-section2__left-content-mockup {
     width: 340px;
     height: 710px;
