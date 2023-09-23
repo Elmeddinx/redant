@@ -165,7 +165,7 @@ body {
 }
 
 .la-header {
-  margin-top: 125px;
+  margin: 50px 0;
 }
 .la-header__container {
   max-width: 1210px;
@@ -710,6 +710,12 @@ body {
   position: relative;
   grid-area: left-mockup;
 }
+@media only screen and (max-width: 1200px) {
+  .la-section2__left {
+    width: 479px;
+    height: 695.24px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .la-section2__left {
     width: 460px;
@@ -791,6 +797,13 @@ body {
   box-sizing: border-box;
   border: 8px solid transparent;
   z-index: 2;
+}
+@media only screen and (max-width: 1200px) {
+  .la-section2__left-content-mockup {
+    width: 340px;
+    height: 710px;
+    border-radius: 55px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .la-section2__left-content-mockup {

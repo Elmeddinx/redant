@@ -46,7 +46,7 @@
     }
 }
 .la-header {
-    margin-top: 125px;
+    margin: 50px 0;
 
     &__container {
         max-width: 1210px;
@@ -520,6 +520,10 @@
         position: relative;
         grid-area: left-mockup;
 
+        @include mq(desktop-up) {
+            width: 479px;
+            height: 695.24px;
+        }
         @include mq(tablet-landscape-up) {
             width: 460px;
             height: 667px;
@@ -589,6 +593,11 @@
                 box-sizing: border-box;
                 border: 8px solid transparent;
                 z-index: 2;
+                @include mq(desktop-up) {
+                    width: 340px;
+                    height: 710px;
+                    border-radius: 55px;
+                }
                 @include mq(tablet-landscape-up) {
                     width: 323px;
                     height: 667px;
@@ -2380,7 +2389,7 @@
     &__logo {
         width: 258px;
         height: 187px;
-        
+
         @include mq(tablet-portrait-up) {
             width: 197px;
             height: 144px;

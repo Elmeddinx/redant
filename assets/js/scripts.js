@@ -321,18 +321,18 @@ TweenMax.from(".circle-2", 0.5, {
 let laSection1 = gsap.timeline({
     scrollTrigger: {
         trigger: '.la-section1',
-        start: 'top center'
+        start: 'top 75%'
     }
 });
 laSection1.from('.la-section1', {
-    y: 100,
+    y: 50,
     opacity: 0,
     duration: 0.3
 });
 let laSection2 = gsap.timeline({
     scrollTrigger: {
         trigger: '.la-section2',
-        start: 'top center'
+        start: 'top 75%'
     }
 });
 laSection2.from('.la-section2', {
@@ -343,7 +343,7 @@ laSection2.from('.la-section2', {
 let laSection3 = gsap.timeline({
     scrollTrigger: {
         trigger: '.la-section3',
-        start: 'top center'
+        start: 'top 75%'
     }
 });
 laSection3.from('.la-section3', {
@@ -354,7 +354,7 @@ laSection3.from('.la-section3', {
 let laSection4 = gsap.timeline({
     scrollTrigger: {
         trigger: '.la-section4',
-        start: 'top center'
+        start: 'top 75%'
     }
 });
 laSection4.from('.la-section4', {
@@ -365,7 +365,7 @@ laSection4.from('.la-section4', {
 let laSection5 = gsap.timeline({
     scrollTrigger: {
         trigger: '.la-section5',
-        start: 'top center'
+        start: 'top 75%'
     }
 });
 laSection5.from('.la-section5', {
@@ -376,7 +376,7 @@ laSection5.from('.la-section5', {
 let laSection6 = gsap.timeline({
     scrollTrigger: {
         trigger: '.la-section6',
-        start: 'top center'
+        start: 'top 75%'
     }
 });
 laSection6.from('.la-section6', {
@@ -387,7 +387,7 @@ laSection6.from('.la-section6', {
 let laSection7 = gsap.timeline({
     scrollTrigger: {
         trigger: '.la-section7',
-        start: 'top center'
+        start: 'top 75%'
     }
 });
 laSection7.from('.la-section7', {
@@ -398,7 +398,7 @@ laSection7.from('.la-section7', {
 let laSection8 = gsap.timeline({
     scrollTrigger: {
         trigger: '.la-section8',
-        start: 'top center'
+        start: 'top 75%'
     }
 });
 laSection8.from('.la-section8', {
@@ -409,7 +409,7 @@ laSection8.from('.la-section8', {
 let laSection9 = gsap.timeline({
     scrollTrigger: {
         trigger: '.la-section9',
-        start: 'top center'
+        start: 'top 75%'
     }
 });
 laSection9.from('.la-section9', {
