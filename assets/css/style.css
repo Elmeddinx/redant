@@ -988,6 +988,11 @@ body {
   justify-content: space-around;
   grid-template-areas: "right-title left-mockup" "right-accordion left-mockup";
 }
+@media (max-width: 1280px) {
+  .la-section3__inner {
+    grid-template-columns: 310px 479px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .la-section3__inner {
     grid-template-columns: 310px 400px;
@@ -1011,6 +1016,12 @@ body {
   justify-content: center;
   position: relative;
   grid-area: left-mockup;
+}
+@media (max-width: 1280px) {
+  .la-section3__left {
+    width: 479px;
+    height: 695.24px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .la-section3__left {
@@ -1093,6 +1104,13 @@ body {
   box-sizing: border-box;
   border: 8px solid transparent;
   z-index: 2;
+}
+@media (max-width: 1280px) {
+  .la-section3__left-content-mockup {
+    width: 340px;
+    height: 710px;
+    border-radius: 55px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .la-section3__left-content-mockup {
@@ -1757,7 +1775,7 @@ body {
   z-index: 2;
   animation: phone-1 infinite ease-in-out 3s;
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1280px) {
   .la-section6__bottom-hero-phone1 {
     width: 290px;
   }
@@ -1779,7 +1797,7 @@ body {
   bottom: 0;
   animation: phone-2 infinite ease-in-out 3s;
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1280px) {
   .la-section6__bottom-hero-phone2 {
     width: 300px;
   }
@@ -1831,7 +1849,7 @@ body {
   z-index: 3;
   animation: sphare-anim 5s linear infinite;
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1280px) {
   .la-section6__bottom-sphere1 {
     width: 120px;
     height: 120px;
@@ -1873,7 +1891,7 @@ body {
   top: 92px;
   animation: sphare-anim 3s linear infinite;
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1280px) {
   .la-section6__bottom-sphere2 {
     width: 60px;
     height: 60px;
@@ -1906,7 +1924,7 @@ body {
   bottom: 87px;
   animation: sphare-anim 5s linear infinite;
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1280px) {
   .la-section6__bottom-sphere3 {
     width: 25px;
     height: 25px;
@@ -1939,7 +1957,7 @@ body {
   top: 70px;
   animation: sphare-anim 5s linear infinite;
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1280px) {
   .la-section6__bottom-sphere4 {
     width: 20px;
     height: 20px;
@@ -1965,7 +1983,7 @@ body {
     transform: rotate(360deg);
   }
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1280px) {
   .la-section6__bottom {
     width: 460px;
     height: 500px;
@@ -2606,6 +2624,11 @@ body {
   justify-content: center;
   margin-top: 206px;
 }
+@media (max-width: 1280px) {
+  .la-section9__mockup {
+    max-width: 485.33px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .la-section9__mockup {
     margin-top: 133px;
@@ -2621,6 +2644,11 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   max-width: 375px;
+}
+@media (max-width: 1280px) {
+  .la-section9__mockup-phone {
+    max-width: 325px;
+  }
 }
 .la-section9__card {
   width: 160px;
@@ -2740,6 +2768,11 @@ body {
   margin-top: 325px;
   margin-bottom: 32px;
   padding: 0 32px;
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .la-footer {
+    margin-top: 365px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .la-footer {

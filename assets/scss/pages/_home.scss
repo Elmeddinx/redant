@@ -773,6 +773,9 @@
             "right-title left-mockup"
             "right-accordion left-mockup";
 
+        @media (max-width: 1280px) {
+            grid-template-columns: 310px 479px;
+        }
         @media (min-width: 768px) and (max-width: 1024px) {
             grid-template-columns: 310px 400px;
         }
@@ -798,6 +801,10 @@
         position: relative;
         grid-area: left-mockup;
 
+        @media (max-width: 1280px) {
+            width: 479px;
+            height: 695.24px;
+        }
         @include mq(tablet-landscape-up) {
             width: 460px;
             height: 667px;
@@ -867,6 +874,11 @@
                 box-sizing: border-box;
                 border: 8px solid transparent;
                 z-index: 2;
+                @media (max-width: 1280px) {
+                    width: 340px;
+                    height: 710px;
+                    border-radius: 55px;
+                }
                 @include mq(tablet-landscape-up) {
                     width: 323px;
                     height: 667px;
@@ -1456,7 +1468,7 @@
                 position: relative;
                 z-index: 2;
                 animation: phone-1 infinite ease-in-out 3s;
-                @include mq(desktop-up) {
+                @media (max-width: 1280px) {
                     width: 290px;
                 }
                 @include mq(tablet-landscape-up) {
@@ -1472,7 +1484,7 @@
                 right: 0;
                 bottom: 0;
                 animation: phone-2 infinite ease-in-out 3s;
-                @include mq(desktop-up) {
+                @media (max-width: 1280px) {
                     width: 300px;
                 }
                 @include mq(tablet-landscape-up) {
@@ -1518,7 +1530,7 @@
             z-index: 3;
             // transform-origin: 50% 0px;
             animation: sphare-anim 5s linear infinite;
-            @include mq(desktop-up) {
+            @media (max-width: 1280px) {
                 width: 120px;
                 height: 120px;
                 left: -28px;
@@ -1550,7 +1562,7 @@
             right: -65px;
             top: 92px;
             animation: sphare-anim 3s linear infinite;
-            @include mq(desktop-up) {
+            @media (max-width: 1280px) {
                 width: 60px;
                 height: 60px;
             }
@@ -1575,7 +1587,7 @@
             right: 0;
             bottom: 87px;
             animation: sphare-anim 5s linear infinite;
-            @include mq(desktop-up) {
+            @media (max-width: 1280px) {
                 width: 25px;
                 height: 25px;
             }
@@ -1600,7 +1612,7 @@
             left: 50%;
             top: 70px;
             animation: sphare-anim 5s linear infinite;
-            @include mq(desktop-up) {
+            @media (max-width: 1280px) {
                 width: 20px;
                 height: 20px;
             }
@@ -1622,7 +1634,7 @@
             }
         }
 
-        @include mq(desktop-up) {
+        @media (max-width: 1280px) {
             width: 460px;
             height: 500px;
         }
@@ -2213,6 +2225,9 @@
         justify-content: center;
         margin-top: 206px;
 
+        @media (max-width: 1280px) {
+            max-width: 485.33px;
+        }
         @include mq(tablet-portrait-up) {
             margin-top: 133px;
         }
@@ -2226,7 +2241,11 @@
             top: 50%;
             transform: translate(-50%, -50%);
             max-width: 375px;
+            @media (max-width: 1280px) {
+                max-width: 325px;
+            }
         }
+        
     }
     &__card {
         width: 160px;
@@ -2335,6 +2354,9 @@
     margin-bottom: 32px;
     padding: 0 32px;
 
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        margin-top: 365px;
+    }
     @include mq(tablet-portrait-up) {
         margin-top: 201px;
         margin-bottom: 0;
