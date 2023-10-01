@@ -230,10 +230,10 @@ body {
 }
 .la-header__title {
   color: #E6E8EC;
-  font-size: 64px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
-  line-height: 64px;
+  line-height: 60px;
   letter-spacing: -1.28px;
   max-width: 544px;
   margin-bottom: 32px;
@@ -252,6 +252,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 40px;
+  max-width: 424px;
 }
 .la-header__btn-group {
   display: flex;
