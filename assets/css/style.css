@@ -111,6 +111,10 @@ body {
   color: #23262F;
 }
 
+.disable-btn {
+  pointer-events: none;
+}
+
 .la-nav {
   width: 100%;
   margin-top: 48px;
@@ -238,10 +242,17 @@ body {
   max-width: 544px;
   margin-bottom: 32px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .la-header__title {
     font-size: 48px;
     line-height: 56px;
+    letter-spacing: -0.96px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .la-header__title {
+    font-size: 35px;
+    line-height: 43px;
     letter-spacing: -0.96px;
   }
 }
@@ -790,34 +801,33 @@ body {
   width: 391px;
   height: 828px;
   overflow: hidden;
-  border-radius: 61px;
+  border-radius: 54px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
   box-sizing: border-box;
-  border: 8px solid transparent;
   z-index: 2;
 }
 @media (max-width: 1280px) {
   .la-section2__left-content-mockup {
     width: 340px;
     height: 710px;
-    border-radius: 55px;
+    border-radius: 49px;
   }
 }
 @media only screen and (max-width: 1024px) {
   .la-section2__left-content-mockup {
     width: 323px;
     height: 667px;
-    border-radius: 50px;
+    border-radius: 43px;
   }
 }
 @media only screen and (max-width: 768px) {
   .la-section2__left-content-mockup {
     width: 224px;
     height: 451px;
-    border-radius: 37px;
+    border-radius: 31px;
   }
 }
 .la-section2__left-content-mockup__phone {
@@ -828,22 +838,22 @@ body {
   overflow: hidden;
 }
 .la-section2__left-content-mockup__screens {
-  width: 300%;
-  height: 100%;
+  width: 287.72%;
+  height: 98.07%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 8px;
+  left: 8px;
   transform: translateX(0);
   transition: transform 0.3s;
   box-sizing: content-box;
 }
 @media only screen and (max-width: 768px) {
   .la-section2__left-content-mockup__screens {
-    top: 0px;
-    left: 0px;
+    top: 4px;
+    left: 4px;
   }
 }
 .la-section2__left-content-mockup__screen {
@@ -1097,34 +1107,33 @@ body {
   width: 391px;
   height: 828px;
   overflow: hidden;
-  border-radius: 61px;
+  border-radius: 54px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
   box-sizing: border-box;
-  border: 8px solid transparent;
   z-index: 2;
 }
 @media (max-width: 1280px) {
   .la-section3__left-content-mockup {
     width: 340px;
     height: 710px;
-    border-radius: 55px;
+    border-radius: 49px;
   }
 }
 @media only screen and (max-width: 1024px) {
   .la-section3__left-content-mockup {
     width: 323px;
     height: 667px;
-    border-radius: 50px;
+    border-radius: 43px;
   }
 }
 @media only screen and (max-width: 768px) {
   .la-section3__left-content-mockup {
     width: 224px;
     height: 451px;
-    border-radius: 37px;
+    border-radius: 31px;
   }
 }
 .la-section3__left-content-mockup__phone {
@@ -1135,22 +1144,22 @@ body {
   overflow: hidden;
 }
 .la-section3__left-content-mockup__screens {
-  width: 300%;
-  height: 100%;
+  width: 287.72%;
+  height: 98.07%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 8px;
+  left: 8px;
   transform: translateX(0);
   transition: transform 0.3s;
   box-sizing: content-box;
 }
 @media only screen and (max-width: 768px) {
   .la-section3__left-content-mockup__screens {
-    top: 0px;
-    left: 0px;
+    top: 4px;
+    left: 4px;
   }
 }
 .la-section3__left-content-mockup__screen {
@@ -1430,8 +1439,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  -moz-column-gap: 23px;
-       column-gap: 23px;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
   box-sizing: border-box;
 }
 @media only screen and (max-width: 768px) {
@@ -1506,8 +1515,8 @@ body {
 }
 .la-section4 .swiper-slide__card-header__right-price {
   display: flex;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 .la-section4 .swiper-slide__card-header__right-price hr {
   width: 1px;
@@ -2610,12 +2619,18 @@ body {
   }
 }
 .la-section9__text {
+  width: 352px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   color: #E6E8EC;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .la-section9__text {
+    width: 100%;
+  }
 }
 .la-section9__mockup {
   max-width: 560px;
