@@ -574,21 +574,21 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (max-width: 768px) {
-  .la-awards__inner {
-    padding: 0 24px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .la-awards__inner {
-    padding: 0 16px;
-  }
-}
 .la-awards__top {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .la-awards__top {
+    padding: 0 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .la-awards__top {
+    padding: 0 16px;
+  }
 }
 .la-awards__subtitle {
   font-size: 16px;
@@ -658,6 +658,17 @@ body {
   .la-awards__bottom img {
     width: 160px;
     height: 160px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .la-awards .swiper-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .la-awards .swiper-wrapper {
+    padding-left: 0;
   }
 }
 
@@ -743,7 +754,7 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .la-section1 .swiper-wrapper {
-    padding-left: 12px;
+    padding-left: 16px;
   }
 }
 @media only screen and (min-width: 900px) {
