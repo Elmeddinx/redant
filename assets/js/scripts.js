@@ -360,6 +360,17 @@ TweenMax.from(".circle-2", 0.5, {
     x: -50,
     opacity: 0
 });
+let laAwards = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.la-awards',
+        start: 'top 75%'
+    }
+});
+laAwards.from('.la-awards', {
+    y: 75,
+    opacity: 0,
+    duration: 0.3
+});
 let laSection1 = gsap.timeline({
     scrollTrigger: {
         trigger: '.la-section1',
