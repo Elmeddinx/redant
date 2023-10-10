@@ -541,7 +541,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .la-header {
-    margin-top: 48px;
+    margin: 48px 0 0 0;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -550,8 +550,118 @@ body {
   }
 }
 
+.la-awards {
+  margin-top: 132px;
+}
+@media only screen and (max-width: 768px) {
+  .la-awards {
+    margin-top: 0;
+  }
+}
+.la-awards__container {
+  max-width: 1184px;
+  margin: auto;
+  padding: 0 32px;
+}
+@media only screen and (max-width: 768px) {
+  .la-awards__container {
+    padding: 0;
+  }
+}
+.la-awards__inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 768px) {
+  .la-awards__inner {
+    padding: 0 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .la-awards__inner {
+    padding: 0 12px;
+  }
+}
+.la-awards__top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.la-awards__subtitle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #45B26B;
+  text-align: center;
+}
+.la-awards__title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  color: #E6E8EC;
+  margin: 14px 0 24px 0;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .la-awards__title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.32px;
+  }
+}
+.la-awards__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #B1B5C3;
+  text-align: center;
+}
+.la-awards__midd {
+  width: 100%;
+  margin-top: 64px;
+}
+.la-awards__item-img {
+  width: 100%;
+}
+.la-awards .awardsSwiper {
+  height: 350px;
+}
+.la-awards__bottom {
+  max-width: 728px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+  row-gap: 40px;
+  margin-top: 80px;
+}
+@media only screen and (max-width: 768px) {
+  .la-awards__bottom {
+    flex-direction: column;
+  }
+}
+.la-awards__bottom img {
+  width: 200px;
+  height: 200px;
+}
+@media only screen and (max-width: 768px) {
+  .la-awards__bottom img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
 .la-section1 {
-  margin-top: 128px;
+  margin-top: 136px;
 }
 .la-section1__container {
   max-width: 1376px;
@@ -666,7 +776,7 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .la-section1 {
-    margin-top: 0;
+    margin-top: 120px;
   }
 }
 

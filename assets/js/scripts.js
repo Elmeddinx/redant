@@ -1,36 +1,3 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: "auto",
-    pagination: false,
-    breakpoints: {
-        320: {
-            slidesPerView: 1.4,
-        },
-        375: {
-            slidesPerView: 1.65,
-        },
-        450: {
-            slidesPerView: 2,
-        },
-        525: {
-            slidesPerView: 2.3,
-        },
-        625: {
-            slidesPerView: 2.8,
-        },
-        725: {
-            slidesPerView: 3.25,
-        },
-        825: {
-            slidesPerView: 3.75,
-        },
-        900: {
-            slidesPerView: 4,
-        },
-        1200: {
-            slidesPerView: 6,
-        },
-    },
-});
 
 let accordions = document.querySelectorAll(".accordion");
 
@@ -85,6 +52,81 @@ accordionItems.forEach((accItem, accndex) => {
             content.style.maxHeight = content.scrollHeight + 'px';
         }
     });
+});
+var swiper = new Swiper(".awardsSwiper", {
+    slidesPerView: "auto",
+    pagination: false,
+    spaceBetween: 64,
+    slidesPerView: 4,
+    breakpoints: {
+        320: {
+            slidesPerView: 1.4,
+            spaceBetween: 16,
+        },
+        375: {
+            slidesPerView: 1.65,
+            spaceBetween: 24,
+        },
+        450: {
+            slidesPerView: 2,
+        },
+        525: {
+            slidesPerView: 2.25,
+        },
+        625: {
+            slidesPerView: 2.75,
+        },
+        725: {
+            slidesPerView: 3,
+        },
+        825: {
+            slidesPerView: 3.25,
+            spaceBetween: 64,
+        },
+        900: {
+            slidesPerView: 3.5,
+        },
+        1000: {
+            slidesPerView: 3.75,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+    },
+});
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    pagination: false,
+    breakpoints: {
+        320: {
+            slidesPerView: 1.4,
+        },
+        375: {
+            slidesPerView: 1.65,
+        },
+        450: {
+            slidesPerView: 2,
+        },
+        525: {
+            slidesPerView: 2.3,
+        },
+        625: {
+            slidesPerView: 2.8,
+        },
+        725: {
+            slidesPerView: 3.25,
+        },
+        825: {
+            slidesPerView: 3.75,
+        },
+        900: {
+            slidesPerView: 4,
+        },
+        1200: {
+            slidesPerView: 6,
+        },
+    },
 });
 
 var swiperBay = new Swiper('.swiperBay', {
