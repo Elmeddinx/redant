@@ -42,7 +42,7 @@
     }
 
     @include mq(phone-only) {
-        padding: 0 12px;
+        padding: 0 16px;
     }
 }
 .la-header {
@@ -141,7 +141,7 @@
         align-items: center;
         column-gap: 16px;
 
-        @media only screen and (max-width: 370px) {
+        @media only screen and (max-width: 380px) {
             column-gap: 10px;
 
             a,
@@ -367,7 +367,7 @@
     }
 
     @include mq(phone-only) {
-        padding: 0 12px;
+        padding: 0 16px;
     }
 }
 .la-awards {
@@ -394,7 +394,7 @@
             padding: 0 24px;
         }
         @include mq(phone-only) {
-            padding: 0 12px;
+            padding: 0 16px;
         }
     }
     &__top {
@@ -591,7 +591,7 @@
         position: relative;
 
         @include mq(tablet-portrait-up) {
-            padding: 0 12px;
+            padding: 0 16px;
         }
     }
     &__inner {
@@ -868,7 +868,7 @@
         position: relative;
 
         @include mq(tablet-portrait-up) {
-            padding: 0 12px;
+            padding: 0 16px;
         }
     }
     &__inner {
@@ -1528,7 +1528,7 @@
             background: transparent;
         }
         @include mq(phone-only) {
-            padding: 0 12px;
+            padding: 0 16px;
         }
     }
     &__subtitle {
@@ -1987,7 +1987,7 @@
             padding: 0 24px;
         }
         @include mq(phone-only) {
-            padding: 0 12px;
+            padding: 0 16px;
         }
     }
     &__top {
@@ -2282,7 +2282,7 @@
             padding: 0 24px;
         }
         @include mq(phone-only) {
-            padding: 0 12px;
+            padding: 0 16px;
         }
     }
     &__top {

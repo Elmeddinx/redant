@@ -164,7 +164,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .la-nav {
-    padding: 0 12px;
+    padding: 0 16px;
   }
 }
 
@@ -271,7 +271,7 @@ body {
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 380px) {
   .la-header__btn-group {
     -moz-column-gap: 10px;
          column-gap: 10px;
@@ -546,7 +546,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .la-header {
-    padding: 0 12px;
+    padding: 0 16px;
   }
 }
 
@@ -581,7 +581,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .la-awards__inner {
-    padding: 0 12px;
+    padding: 0 16px;
   }
 }
 .la-awards__top {
@@ -797,7 +797,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .la-section2__container {
-    padding: 0 12px;
+    padding: 0 16px;
   }
 }
 .la-section2__inner {
@@ -1098,7 +1098,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .la-section3__container {
-    padding: 0 12px;
+    padding: 0 16px;
   }
 }
 .la-section3__inner {
@@ -1842,7 +1842,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .la-section6__inner {
-    padding: 0 12px;
+    padding: 0 16px;
   }
 }
 .la-section6__subtitle {
@@ -2371,7 +2371,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .la-section8__inner {
-    padding: 0 12px;
+    padding: 0 16px;
   }
 }
 .la-section8__top {
@@ -2692,7 +2692,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .la-section9__inner {
-    padding: 0 12px;
+    padding: 0 16px;
   }
 }
 .la-section9__top {
