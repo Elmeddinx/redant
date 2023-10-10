@@ -363,15 +363,116 @@
     }
 
     @include mq(tablet-portrait-up) {
-        margin-top: 48px;
+        margin: 48px 0 0 0;
     }
 
     @include mq(phone-only) {
         padding: 0 12px;
     }
 }
+.la-awards {
+    margin-top: 132px;
+
+    @include mq(tablet-portrait-up) {
+        margin-top: 0;
+    }
+    &__container {
+        max-width: 1184px;
+        margin: auto;
+        padding: 0 32px;
+        @include mq(tablet-portrait-up) {
+            padding: 0;
+        }
+    }
+    &__inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @include mq(tablet-portrait-up) {
+            padding: 0 24px;
+        }
+        @include mq(phone-only) {
+            padding: 0 12px;
+        }
+    }
+    &__top {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $primary-4;
+        text-align: center;
+    }
+    &__title {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -0.96px;
+        color: $neutrals-8;
+        margin: 14px 0 24px 0;
+        text-align: center;
+
+        @include mq(tablet-portrait-up) {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.32px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        color: $neutrals-5;
+        text-align: center;
+    }
+    &__midd {
+        width: 100%;
+        margin-top: 64px;
+    }
+    &__item {
+        &-img {
+            width: 100%;
+        }
+    }
+    .awardsSwiper {
+        height: 350px;
+
+    }
+    &__bottom {
+        max-width: 728px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 64px;
+        row-gap: 40px;
+        margin-top: 80px;
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            @include mq(tablet-portrait-up) {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+
+}
 .la-section1 {
-    margin-top: 128px;
+    margin-top: 136px;
     &__container {
         max-width: 1376px;
         margin: auto;
@@ -474,7 +575,7 @@
         }
     }
     @include mq(tablet-landscape-up) {
-        margin-top: 0;
+        margin-top: 120px;
     }
 }
 .la-section2 {
