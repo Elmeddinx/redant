@@ -459,6 +459,7 @@
         margin-top: 80px;
         @include mq(tablet-portrait-up) {
             flex-direction: column;
+            margin-top: 30px;
         }
         img {
             width: 200px;
