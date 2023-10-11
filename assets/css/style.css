@@ -1474,6 +1474,11 @@ body {
 .la-section4__header {
   max-width: 541px;
 }
+@media only screen and (max-width: 768px) {
+  .la-section4__header {
+    padding: 0 24px;
+  }
+}
 .la-section4__sub-title {
   font-size: 16px;
   font-style: normal;
@@ -1521,6 +1526,11 @@ body {
 @media only screen and (max-width: 768px) {
   .la-section4 .swiperBay {
     padding-left: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .la-section4 .swiperBay {
+    padding-left: 16px;
   }
 }
 .la-section4 .swiper-slide {
@@ -1690,6 +1700,16 @@ body {
        column-gap: 20px;
   margin-top: 53px;
 }
+@media only screen and (max-width: 768px) {
+  .la-section4__couple-btn {
+    padding-left: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .la-section4__couple-btn {
+    padding-left: 16px;
+  }
+}
 .la-section4__couple-btn .swiper-button-next,
 .la-section4__couple-btn .swiper-button-prev {
   position: relative !important;
@@ -1812,7 +1832,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .la-section5 .swiper-wrapper {
-    padding-left: 12px;
+    padding-left: 16px;
   }
 }
 .la-section5 .swiper {
